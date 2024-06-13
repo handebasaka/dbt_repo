@@ -1,7 +1,7 @@
 -- Goal: A table showing hourly metrics, including location and geo information.
 -- For urls in condition_icon column we need a markdown version as a new column.
 WITH joining_hour_location AS (
-    SELECT * FROM {{ref('prep_forecast_day')}}
+    SELECT * FROM {{ref('prep_forecast_hour')}}
     LEFT JOIN {{ref('staging_location')}}
     USING(city, region, country)
 ),
