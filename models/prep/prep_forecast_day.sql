@@ -10,6 +10,7 @@ add_features AS (
         ,TO_CHAR(date, 'Day') AS day_of_week -- weekday name as text
         ,DATE_PART('week', date) AS week_of_year -- calender week number as number
         ,TO_CHAR(date, 'YYYY-WW') AS year_and_week -- year-calenderweek as text like '2024-43'
+        ,TO_CHAR(date, 'YYYY-MM') AS year_and_month -- year-month as text like '2024-01'
 
     FROM forecast_day_data
 )
