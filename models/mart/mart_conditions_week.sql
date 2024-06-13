@@ -20,7 +20,7 @@ filtering_features AS (
         max_temp_c,
         min_temp_c,
         avg_temp_c,
-        total_percip_mm,
+        total_precip_mm,
         total_snow_cm,
         avg_humidity,
         daily_will_it_rain,
